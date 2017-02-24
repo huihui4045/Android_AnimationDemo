@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android_playerdemo.android_animationdemo.view.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android_playerdemo.android_animationdemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark">
+
+        <View
+            android:id="@+id/view"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_orange_dark" />
+
+    </RelativeLayout>
+
+
+    <android_playerdemo.android_animationdemo.view.AView
+        android:id="@+id/aView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="gone" />
+
+    <android_playerdemo.android_animationdemo.view.BView
+        android:id="@+id/bView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:background="@android:color/holo_red_light"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="开始动画" />
+
+
+</android_playerdemo.android_animationdemo.view.XRelativeLayout>
