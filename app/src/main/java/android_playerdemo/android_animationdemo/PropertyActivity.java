@@ -38,6 +38,8 @@ public class PropertyActivity extends AppCompatActivity implements View.OnClickL
                 mView.layout(value, value, value + mView.getWidth(), value + mView.getHeight());
             }
         });
+
+        mView.getWidth();
     }
 
 
