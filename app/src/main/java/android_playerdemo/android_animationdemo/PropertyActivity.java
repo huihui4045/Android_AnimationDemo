@@ -1,6 +1,7 @@
 package android_playerdemo.android_animationdemo;
 
 import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.os.Build;
 import android.os.Bundle;
@@ -33,6 +34,8 @@ public class PropertyActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property);
 
+
+
         mView = findViewById(R.id.view_anim);
 
         mViewBig = findViewById(R.id.view_anim1);
@@ -41,6 +44,10 @@ public class PropertyActivity extends AppCompatActivity implements View.OnClickL
         animator = ValueAnimator.ofInt(0, 1000);
 
         mBtnChar = ((Button) findViewById(R.id.btn_char));
+
+        mBtnChar.animate().setDuration(2000);
+
+        ObjectAnimator objectAnimator= ObjectAnimator.ofFloat(null,"",2);
 
 
         mObjectAnimator = ValueAnimator.ofObject(new CharEvluator(), new Character('A'), new Character('Z'));
